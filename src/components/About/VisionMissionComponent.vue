@@ -1,30 +1,25 @@
 <template>
     <div class="vision-mission-area container-fluid mb-4">
-        <div class="row">
-            <div class="col-6 vision">
-                <h1 class="text-uppercase vision-mission-title">
-                    <span>Vision</span>
-                </h1>
-                <div class="vision-mission-content row" v-for="index in 10" :key="index">
-                    <div class="col-1">{{ index }}.</div>
-                    <div class="col-11">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni amet sunt illum.
-                        Dolor dolores illum autem velit iste aperiam assumenda corporis voluptatibus. Quia dolore natus
-                        esse ut? Suscipit, nulla.
-                    </div>
-                </div>
+        <div class="vision mb-4">
+            <h1 class="text-uppercase vision-mission-title">
+                <span>Vision</span>
+            </h1>
+            <div class="vision-mission-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni amet sunt illum.
+                Dolor dolores illum autem velit iste aperiam assumenda corporis voluptatibus. Quia dolore natus
+                esse ut? Suscipit, nulla.
             </div>
-            <div class="col-6 mission">
-                <h1 class="text-uppercase vision-mission-title">
-                    <span>Mission</span>
-                </h1>
-                <div class="vision-mission-content row" v-for="index in 10" :key="index">
-                    <div class="col-1">{{ index }}.</div>
-                    <div class="col-11">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni amet sunt illum.
-                        Dolor dolores illum autem velit iste aperiam assumenda corporis voluptatibus. Quia dolore natus
-                        esse ut? Suscipit, nulla.
-                    </div>
+        </div>
+        <div class="mission mb-4">
+            <h1 class="text-uppercase vision-mission-title">
+                <span>Mission</span>
+            </h1>
+            <div class="vision-mission-content row" v-for="index in 10" :key="index">
+                <div class="col-1">{{ index }}.</div>
+                <div class="col-11">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni amet sunt illum.
+                    Dolor dolores illum autem velit iste aperiam assumenda corporis voluptatibus. Quia dolore natus
+                    esse ut? Suscipit, nulla.
                 </div>
             </div>
         </div>

@@ -1,17 +1,19 @@
 <template>
-    <div class="row">
-        <div class="col-lg-12 text-center services-title">
-            <h1 class="text-uppercase title-text">Recently Done Projects</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center services-title">
+                <h1 class="text-uppercase title-text">Recently Done Projects</h1>
+            </div>
         </div>
-    </div>
-    <div class="container element-container">
-        <div class="row grid">
-            <div class="col-lg-4 col-6 element-item" v-for="(project, index) in projects" :key="index">
-                <div class="card text-center mb-4">
-                    <img src="../../assets/logo.png" v-bind:alt="project.name" class="img-fluid">
-                    <div class="card-body">
-                        <h4 class="text-uppercase">{{ project.name }}</h4>
-                        <span class="text-secondary">{{ project.category }}, {{ project.time }}</span>
+        <div class="container element-container">
+            <div class="row grid">
+                <div class="col-lg-4 col-6 element-item" v-for="(project, index) in projects" :key="index">
+                    <div class="card text-center mb-4">
+                        <img src="../../assets/logo.png" v-bind:alt="project.name" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="text-uppercase">{{ project.name }}</h4>
+                            <span class="text-secondary">{{ project.category }}, {{ project.time }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
